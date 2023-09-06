@@ -1,0 +1,16 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Su Goh",
+    "section": "",
+    "text": "This is a Su Goh website.\nTo learn more about Quarto websites visit https://quarto.org/docs/websites.\n\nplot(mtcars)"
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "I am a graduate student at UT Dallas using R\n\nplot(iris)"
+  }
+]
