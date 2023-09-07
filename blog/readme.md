@@ -1,4 +1,4 @@
-roject:
+project:
   type: website
 
 website:
@@ -16,3 +16,4 @@ format:
     css: styles.css
 
 editor: visual
+
