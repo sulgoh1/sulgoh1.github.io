@@ -1,17 +1,10 @@
 [
   {
-    "objectID": "assignment1.html",
-    "href": "assignment1.html",
-    "title": "Assignment#1",
+    "objectID": "blog.html",
+    "href": "blog.html",
+    "title": "Blog",
     "section": "",
-    "text": "Assignment#1\n1.\n\nAnscombe Data\n\nAnscombe’s Plots\n\nExamples of Generative Art\n\n\nManfred Mohr. P-026-l, 1970, Plotter drawing on parchment paper, DAM Projects, Berlin.\n\nTyler Hobbs, QQL: Analog 12 (QQL #230), 2023. Courtesy of the artist and Pace Gallery\n\nChange different colors of a tree\n\n\nChocolate Color\n\nOrchid Color\n\nPalegreen Color"
-  },
-  {
-    "objectID": "assignment2.html",
-    "href": "assignment2.html",
-    "title": "Assignment#2",
-    "section": "",
-    "text": "Assignment#2\n1.\n\nMurrell’s Plots"
+    "text": "This is my blog."
   },
   {
     "objectID": "index.html",
@@ -21,17 +14,45 @@
     "text": "This is a Su Goh website.\nTo learn more about Quarto websites visit https://quarto.org/docs/websites.\n\nplot(mtcars, cex=.5, pch=16, col='firebrick')"
   },
   {
+    "objectID": "assignment5.html",
+    "href": "assignment5.html",
+    "title": "Assignment#5",
+    "section": "",
+    "text": "Assignment#5\n1."
+  },
+  {
+    "objectID": "assignment3.html",
+    "href": "assignment3.html",
+    "title": "Assignment#3",
+    "section": "",
+    "text": "Assignment#3\n\n\nShow Hidden Code\nff &lt;- y ~ x\nmods &lt;- setNames(as.list(1:4), paste0(\"lm\", 1:4))\n\n# Plot using for loop\nfor(i in 1:4) {\n  ff[2:3] &lt;- lapply(paste0(c(\"y\",\"x\"), i), as.name)\n  ## or   ff[[2]] &lt;- as.name(paste0(\"y\", i))\n  ##      ff[[3]] &lt;- as.name(paste0(\"x\", i))\n  mods[[i]] &lt;- lmi &lt;- lm(ff, data = anscombe)\n  print(anova(lmi))\n}\n\n\nAnalysis of Variance Table\n\nResponse: y1\n          Df Sum Sq Mean Sq F value  Pr(&gt;F)   \nx1         1 27.510 27.5100   17.99 0.00217 **\nResiduals  9 13.763  1.5292                   \n---\nSignif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1\nAnalysis of Variance Table\n\nResponse: y2\n          Df Sum Sq Mean Sq F value   Pr(&gt;F)   \nx2         1 27.500 27.5000  17.966 0.002179 **\nResiduals  9 13.776  1.5307                    \n---\nSignif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1\nAnalysis of Variance Table\n\nResponse: y3\n          Df Sum Sq Mean Sq F value   Pr(&gt;F)   \nx3         1 27.470 27.4700  17.972 0.002176 **\nResiduals  9 13.756  1.5285                    \n---\nSignif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1\nAnalysis of Variance Table\n\nResponse: y4\n          Df Sum Sq Mean Sq F value   Pr(&gt;F)   \nx4         1 27.490 27.4900  18.003 0.002165 **\nResiduals  9 13.742  1.5269                    \n---\nSignif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1\n\n\nShow Hidden Code\nsapply(mods, coef)  # Note the use of this function\n\n\n                  lm1      lm2       lm3       lm4\n(Intercept) 3.0000909 3.000909 3.0024545 3.0017273\nx1          0.5000909 0.500000 0.4997273 0.4999091\n\n\nShow Hidden Code\nlapply(mods, function(fm) coef(summary(fm)))\n\n\n$lm1\n             Estimate Std. Error  t value    Pr(&gt;|t|)\n(Intercept) 3.0000909  1.1247468 2.667348 0.025734051\nx1          0.5000909  0.1179055 4.241455 0.002169629\n\n$lm2\n            Estimate Std. Error  t value    Pr(&gt;|t|)\n(Intercept) 3.000909  1.1253024 2.666758 0.025758941\nx2          0.500000  0.1179637 4.238590 0.002178816\n\n$lm3\n             Estimate Std. Error  t value    Pr(&gt;|t|)\n(Intercept) 3.0024545  1.1244812 2.670080 0.025619109\nx3          0.4997273  0.1178777 4.239372 0.002176305\n\n$lm4\n             Estimate Std. Error  t value    Pr(&gt;|t|)\n(Intercept) 3.0017273  1.1239211 2.670763 0.025590425\nx4          0.4999091  0.1178189 4.243028 0.002164602\n\n\nShow Hidden Code\n# Preparing for the plots\nop &lt;- par(mfrow = c(2, 2), mar = 0.1+c(4,4,1,1), oma =  c(0, 0, 2, 0))\n\n# Plot charts using for loop\nfor(i in 1:4) {\n  ff[2:3] &lt;- lapply(paste0(c(\"y\",\"x\"), i), as.name)\n  plot(ff, data = anscombe, col = \"orange\", pch = 21, bg = \"green\", cex = 1.2,\n       xlim = c(3, 19), ylim = c(3, 13))\n  abline(mods[[i]], col = \"blue\", lty=\"dashed\")\n}\nmtext(\"Anscombe's 4 Regression data sets\", outer = TRUE, cex = 1.5)"
+  },
+  {
+    "objectID": "assignment1.html",
+    "href": "assignment1.html",
+    "title": "Assignment#1",
+    "section": "",
+    "text": "Assignment#1\n1.\n\nAnscombe Data\n\nAnscombe’s Plots\n\nExamples of Generative Art\n\n\nManfred Mohr. P-026-l, 1970, Plotter drawing on parchment paper, DAM Projects, Berlin.\n\nTyler Hobbs, QQL: Analog 12 (QQL #230), 2023. Courtesy of the artist and Pace Gallery\n\nChange different colors of a tree\n\n\nChocolate Color\n\nOrchid Color\n\nPalegreen Color\n\nThis Chart shows:\n\nAll the news websites are on the y-axis\nThe percentage of social traffic usage is on x-axis\nArrange the chart based of social traffic usage.\nUses colors to differentiate social media (Facebook, Twitter, Reddit, Stumbleupon, and other)\n\nPro:\n\nKnow immediately which website uses the most social media.\nMost popular social media been used for the past 3 months.\nMost usage of social traffic in on top – which is WashingtonPost.com with a 9.7%\nTypes of social source are based on different colors (Facebook, Twitter, Reddit, Stumbleupon, and other)\nIcons for the social media companies shown on the lower left of the chart.\nColors arranged based on the social media company, for example, Facebook, Twitter, Reddit, Stumbleupon, and other.\nEasy to understand this chart.\nTitle of the chart tells you exactly what it is. Facebook is the most popular social media used by these news websites.\nPercentage usage of social media is shown at the end of each bar chart.\n\nOverall, I think this chart is excellent and it delivers the message to the audiences."
+  },
+  {
+    "objectID": "assignment2.html",
+    "href": "assignment2.html",
+    "title": "Assignment#2",
+    "section": "",
+    "text": "Assignment#2\n1.\n\nMurrell’s Plots"
+  },
+  {
+    "objectID": "assignment4.html",
+    "href": "assignment4.html",
+    "title": "Assignment#4",
+    "section": "",
+    "text": "Assignment#4"
+  },
+  {
     "objectID": "about.html",
     "href": "about.html",
     "title": "About",
     "section": "",
     "text": "I am a graduate student at UT Dallas using R\n\nplot(iris)"
-  },
-  {
-    "objectID": "blog.html",
-    "href": "blog.html",
-    "title": "Blog",
-    "section": "",
-    "text": "This is my blog."
   }
 ]
