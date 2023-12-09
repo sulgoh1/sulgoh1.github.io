@@ -1,0 +1,14 @@
+---
+title: "Assignment#6"
+---
+
+Assignment#6
+
+```{r}
+#| code-fold: true
+#| code-summary: "Show Hidden Code"
+
+
+```
+
+Shiny app
