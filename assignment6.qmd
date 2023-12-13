@@ -8,7 +8,10 @@ Assignment#6
 #| code-fold: true
 #| code-summary: "Show Hidden Code"
 
-
 ```
 
 Shiny app
+
+<https://sulgoh1.shinyapps.io/myshinyapp/>
+
+<https://sulgoh1.shinyapps.io/myshinyapp2/>
