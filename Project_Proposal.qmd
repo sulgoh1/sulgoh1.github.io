@@ -1,0 +1,17 @@
+---
+title: "Project Proposal"
+---
+
+Project Proposal
+
+```{r}
+#| code-fold: true
+#| code-summary: "Show Hidden Code"
+
+
+
+```
+
+<iframe src="https://docs.google.com/presentation/d/e/2PACX-1vTwFMAkJipBDI7081-_Btw8w0l73mVi5yhrCQJSUFLWZBmiDilmyZTI_pvDzqH1ufOCxcf4mNxswjYI/embed?start=false&amp;loop=false&amp;delayms=3000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true">
+
+</iframe>

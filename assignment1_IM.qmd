@@ -1,0 +1,15 @@
+---
+title: "Assignment#1"
+---
+
+Assignment#1
+
+```{r}
+#| code-fold: true
+#| code-summary: "Show Hidden Code"
+
+
+
+```
+
+1\.

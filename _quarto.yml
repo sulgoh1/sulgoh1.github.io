@@ -8,20 +8,36 @@ website:
       - href: index.qmd
         text: Home
       - about.qmd
-      - href: assignment1.qmd
-        text: Assignment1
-      - href: assignment2.qmd
-        text: Assignment2
-      - href: assignment3.qmd
-        text: Assignment3
-      - href: assignment4.qmd
-        text: Assignment4
-      - href: assignment5.qmd
-        text: Assignment5
-      - href: assignment6.qmd
-        text: Assignment6
-      - href: assignment7.qmd
-        text: Assignment7
+      - text: Data Visualization
+        menu:
+        - href: assignment1.qmd
+          text: Assignment1
+        - href: assignment2.qmd
+          text: Assignment2
+        - href: assignment3.qmd
+          text: Assignment3
+        - href: assignment4.qmd
+          text: Assignment4
+        - href: assignment5.qmd
+          text: Assignment5
+        - href: assignment6.qmd
+          text: Assignment6
+        - href: assignment7.qmd
+          text: Assignment7
+      - text: Info Management
+        menu:
+        - href: assignment1_IM.qmd
+          text: Assignment1_IM
+        - href: assignment2_IM.qmd
+          text: Assignment2_IM
+        - href: assignment3_IM.qmd
+          text: Assignment3_IM
+        - href: assignment4_IM.qmd
+          text: Assignment4_IM
+        - href: assignment5_IM.qmd
+          text: Assignment5_IM
+        - href: Project_Proposal.qmd
+          text: Project_proposal
       - href: https://sulgoh1.github.io/blog/
         text: Blog  
 
