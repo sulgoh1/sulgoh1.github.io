@@ -1,0 +1,23 @@
+---
+title: "Assignment#5"
+---
+
+Assignment#5
+
+```{r}
+#| code-fold: true
+#| code-summary: "Show Hidden Code"
+
+
+
+```
+
+2.  Construct an E-R diagram for a hospital with a set of patients and a set of medical doctors.
+
+    Associate with each patient a log of the various tests and examinations conducted (Hint: use miro.com to draw the diagram with relationship sets).
+
+![](images/clipboard-1779788097.png)
+
+3.  We can convert any weak entity set to a strong entity set by simply adding appropriate attributes. Why, then, do we have weak entity sets?
+
+![](images/clipboard-514603476.png)
